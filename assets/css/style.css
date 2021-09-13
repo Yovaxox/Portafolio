@@ -1190,3 +1190,11 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+#img-perfil {
+  border-radius: 100%;
+}
+
+#scrum-master {
+  width: 5%;
+}
