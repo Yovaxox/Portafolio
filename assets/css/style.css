@@ -1198,3 +1198,12 @@ section {
 #scrum-master {
   width: 5%;
 }
+
+#powerapps {
+  width: 40% !important;
+}
+
+#powerappsDiv {
+  left: 43% !important;
+  right: 50% !important;
+}
