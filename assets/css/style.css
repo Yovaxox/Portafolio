@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: var(--fondo-nav);
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -1271,6 +1271,7 @@ body {
   --color-titulos-hechos: #011426;
   --fondo-resume: #f7f8f9;
   --color-portafolio: #272829;
+  --fondo-nav: #f2f3f5;
 }
 
 [data-theme="dark"] {
@@ -1282,11 +1283,12 @@ body {
   --color-titulos-hechos: #FEEBD9;
   --fondo-resume: #080706;
   --color-portafolio: #D8D7D6;
+  --fondo-nav: #1d1b16;
 }
 
 .float{
 	position:fixed;
-	width:60px;
+	width:40px;
 	height:60px;
 	top:40px;
 	right:40px;
