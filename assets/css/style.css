@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a, .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: var(--color-titulos);
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a span, .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: var(--color-titulos);
 }
 
 @media (min-width: 992px) {
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: var(--color-titulos);
 }
 
 .mobile-nav-active {
@@ -262,9 +262,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/inicio.jpg") top right no-repeat;
+  background: var(--img-principal);
   background-size: cover;
   position: relative;
+  transition-duration: 0.5s;
 }
 
 @media (min-width: 992px) {
@@ -275,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--fondo-img-principal);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -288,11 +289,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: var(--color-titulos);
 }
 
 #hero p {
-  color: #45505b;
+  color: var(--color-titulos);
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -310,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: var(--color-titulos);
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -355,7 +356,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: var(--color-titulos);
 }
 
 .section-title h2::before {
@@ -428,7 +429,8 @@ section {
   width: 100%;
   position: relative;
   text-align: center;
-  background: #fff;
+  background: var(--background-color);
+  transition-duration: 0.5s;
 }
 
 .facts .count-box i {
@@ -438,20 +440,22 @@ section {
   transform: translateX(-50%);
   font-size: 24px;
   background: #0563bb;
-  color: #fff;
+  color: var(--background-color);
   border-radius: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
+  transition-duration: 0.5s;
 }
 
 .facts .count-box span {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #011426;
+  color: var(--color-titulos-hechos);
+  transition-duration: 0.5s;
 }
 
 .facts .count-box p {
@@ -478,7 +482,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: var(--color-titulos);
 }
 
 .skills .progress .skill .val {
@@ -505,7 +509,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: var(--color-titulos);
 }
 
 .resume .resume-item {
@@ -527,11 +531,12 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #f7f8f9;
+  background: var(--fondo-resume);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  transition-duration: 0.5s;
 }
 
 .resume .resume-item ul {
@@ -570,9 +575,10 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: var(--background-color);
   border-radius: 50px;
   padding: 2px 15px;
+  transition-duration: 0.5s;
 }
 
 .portfolio #portfolio-flters li {
@@ -583,7 +589,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--color-portafolio);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -663,12 +669,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: var(--color-titulos);
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: var(--color-titulos);
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -681,7 +687,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: var(--color-titulos);
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -825,7 +831,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
+  color: var(--color-titulos);
   transition: ease-in-out 0.3s;
 }
 
@@ -994,7 +1000,8 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  background: var(--background-color);
+  transition-duration: 0.5s;
 }
 
 .contact .info i {
@@ -1016,7 +1023,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: var(--color-titulos);
 }
 
 .contact .info p {
@@ -1135,11 +1142,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: var(--fondo-resume);
+  color: var(--color-titulos);
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
+  transition-duration: 0.5s;
 }
 
 #footer h3 {
@@ -1206,4 +1214,83 @@ section {
 #powerappsDiv {
   left: 43% !important;
   right: 50% !important;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+.work-content .w-more {
+  color: #4e4e4e;
+  font-size: 0.8rem;
+}
+.work-content .w-more .w-ctegory {
+  color: #0078ff;
+}
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #0078ff;
+  float: right;
+}
+.work-content .w-like a {
+  color: #0078ff;
+}
+.work-content .w-like .num-like {
+  font-size: 0.7rem;
+}
+
+#fotoPowerApps {
+  width: 416px;
+  height: 210px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.w-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.work-img img {
+  width: 416px !important;
+  height: 210px !important;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition-duration: 0.5s;
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --img-principal: url("../img/inicio.jpg") top right no-repeat;
+  --fondo-img-principal: rgba(255, 255, 255, 0.5);
+  --color-titulos: #45505b;
+  --color-titulos-hechos: #011426;
+  --fondo-resume: #f7f8f9;
+  --color-portafolio: #272829;
+}
+
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #fff;
+  --img-principal: url("../img/inicio-dark.jpg") top right no-repeat;
+  --fondo-img-principal: rgba(0, 0, 0, 0.5);
+  --color-titulos: #BAAFA4;
+  --color-titulos-hechos: #FEEBD9;
+  --fondo-resume: #080706;
+  --color-portafolio: #D8D7D6;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	top:40px;
+	right:40px;
+	border-radius:50px;
+	text-align:center;
+	/* box-shadow: 2px 2px 3px rgb(255, 255, 255); */
 }
