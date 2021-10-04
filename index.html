@@ -856,7 +856,15 @@
   <script type="text/javascript">
     // Wait for document to load
     document.addEventListener("DOMContentLoaded", function(event) {
-      document.documentElement.setAttribute("data-theme", "light");
+      var d = new Date();
+      var currHour = d.getHours();
+      console.log(currHour)
+
+      if (currHour >= 8 && currHour < 20) {
+          document.documentElement.setAttribute("data-theme", "light");
+      } else {
+          document.documentElement.setAttribute("data-theme", "dark");
+      }
   
       // Get our button switcher
       var themeSwitcher = document.getElementById("theme-switcher");
